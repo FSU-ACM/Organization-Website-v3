@@ -8,7 +8,7 @@ Static website for Florida State University's ACM Chapter
 3. JavaScript - Supplements aditional functionality and responsiveness to the web page.
 
 # Contributing
-Please refer to [CONTRIBUTING.md](https://github.com/FSU-ACM/homepage-v2/CONTRIBUTING.md) if you are interested in contributing to the project.
+Please refer to [CONTRIBUTING.md](https://github.com/FSU-ACM/homepage-v2/blob/master/CONTRIBUTING.md) if you are interested in contributing to the project.
 
 # License
-Content of this repository is licensed under the MIT License, as found in the [LICENSE.md](https://github.com/FSU-ACM/homepage-v2/LICENSE.md) file.
+Content of this repository is licensed under the MIT License, as found in the [LICENSE.md](https://github.com/FSU-ACM/homepage-v2/blob/master/LICENSE.md) file.
