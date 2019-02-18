@@ -103,6 +103,7 @@ a.current {
     right: 50%;
     bottom: 12px;
     cursor: pointer;
+    z-index: 8;
 }
 
 i
@@ -128,24 +129,117 @@ i
 
     .menu {
         display: none;
+        transition: height 100ms ease-out;
+    }
+
+    .menu-show {
+        transition: max-height 200ms ease-in;
+    }
+
+    .menu-show {
+        position: absolute;
+        background-color: #782f40;
+        min-width: 100vw;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        z-index: 10;
+        top: 80px;
+    }
+
+    .menu-show ul {
+        display: block;
+        position: relative;
+        text-align: center;
+        top: 10em;
+        z-index: 11;
+    }
+
+    .menu-show li {
+        display: block;
+        line-height: 5em;
+        font-size: 1.3em;
+        z-index: inherit;
     }
 
     .menu-icon {
         display: block;
         position: absolute;
-        float: right;
-        top: 2em;
-        right: 2%;
-        width: 3.5em;
-        height: 3.5em;
+        cursor: pointer;
+        right: 3%;
+        top: 1.5em;
+        transition-property: opacity, filter;
+        transition-duration: 0.15s;
+        transition-timing-function: linear;
+        padding: 1.2em 1.5em 2em 0;
     }
 
-    #b1, #b2, #b3 {
-        background-color: #e4e4e4;
+    .inner,
+    .inner::before,
+    .inner::after {
+        display: block;
         position: relative;
-        width: 1.6em;
-        height: .2em;
-        margin: .35em;
+        width: 3em;
+        height: .3em;
+        background-color: #e4e4e4;
+        border-radius: .5em;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+    }
+
+    .inner {
+        transition-duration: 0.22s;
+        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    .inner::before {
+        content: "";
+        transition: top 0.1s 0.25s ease-in,
+            opacity 0.1s ease-in;
+        top: -.8em;
+    }
+
+    .inner::after {
+        content: "";
+        transition: bottom 0.1s 0.25s ease-in,
+            transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        bottom: -.5em;
+    }
+
+    .inner-active,
+    .inner-active::before,
+    .inner-active::after {
+        display: block;
+        position: relative;
+        background-color: #e4e4e4;
+        margin-top: -.25em;
+        width: 3em;
+        height: .3em;
+        border-radius: .5em;
+    }
+
+    .inner-active {
+        top: .2em;
+        transform: rotate(225deg);
+        transition-delay: 0.1s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    .inner-active::before {
+        content: "";
+        top: 0;
+        opacity: 0;
+        transition: top 0.1s ease-out,
+                    opacity 0.1s 0.12s ease-out;
+    }
+
+    .inner-active::after {
+        content: "";
+        bottom: 0;
+        transform: rotate(-90deg);
+        transition: bottom 0.1s ease-out,
+                    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
     }
 
     
