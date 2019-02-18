@@ -10,17 +10,21 @@
 
 addCurrent();
 calcHeight();
+logoScrollEvent();
 heroClickEvent();
 mobMenuClickEvent();
 
-window.addEventListener('scroll', () => {
-    let fsu = document.querySelector('div.fsu') || document.querySelector('div.fsu-hide');
-    if (window.scrollY > 100)
-        fsu.className = 'fsu-hide';
-    else
-        fsu.className = 'fsu';
-});
 
+function logoScrollEvent() {
+    window.addEventListener('scroll', () => {
+        let fsu = document.querySelector('div.fsu') || document.querySelector('div.fsu-hide');
+        if (window.scrollY > 100)
+            fsu.className = 'fsu-hide';
+        else
+            fsu.className = 'fsu';
+    });
+    
+};
 
 function mobMenuClickEvent() {
     let innerMenu = document.querySelector('div#mobile'),
