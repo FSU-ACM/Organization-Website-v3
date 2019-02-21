@@ -57,16 +57,16 @@ function calcHeight() {
         footerHeight= document.querySelector('footer').getBoundingClientRect().height;
 
     if (window.location.href.includes('index.html')) {
-        document.querySelector('div.hero').style.height = String(window.innerHeight - navHeight - footerHeight) + 'px';
+        document.querySelector('div.hero').style.height = String(window.innerHeight - navHeight) + 'px';
     }
 
-    document.querySelector('div.content').style.height = String(window.innerHeight - navHeight - footerHeight) + 'px';
+    document.querySelector('div.content').style.height = String(window.innerHeight - navHeight - footerHeight + 1) + 'px';
 };
 
 function addCurrent() {
-    let current = document.querySelector('a');
+    let current = document.querySelector('div.menu > ul > li > a');
 
-    if (current == window.location.href) {
+    if (current.baseURI == window.location.href) {
         current.classList.add('current');
     }
 };
