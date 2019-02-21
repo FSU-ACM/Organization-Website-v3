@@ -14,8 +14,8 @@ Prior to reporting a bug, please make sure there is not already an active [issue
 ## Making Changes
 1. Fork the master branch  
     ```
-    # clone the master branch
-    git clone https://github.com/FSU-ACM/homepage-v2.git
+    # for the master branch and clone your forked copy
+    git clone https://github.com/<YourGitHubUsername>/homepage-v2.git
     ```  
   * If you anticipate spending considerable amount of time on a change, make sure you keep your local repository up to date  
     ```
