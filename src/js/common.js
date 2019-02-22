@@ -64,11 +64,12 @@ function calcHeight() {
 };
 
 function addCurrent() {
-    let current = document.querySelector('div.menu > ul > li > a');
-
-    if (current.baseURI == window.location.href) {
-        current.classList.add('current');
-    }
+    let current = document.querySelectorAll('div.menu > ul > li > a');
+	for(let i=0; i < current.length; i++) {
+		if (current[i].href == window.location.href) {
+			current[i].classList.add('current');
+		}
+	}	
 };
 
 
