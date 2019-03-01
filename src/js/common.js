@@ -64,7 +64,8 @@ function calcHeight() {
 };
 
 function addCurrent() {
-    let current = document.querySelectorAll('div.menu > ul > li > a');
+    let current = document.querySelectorAll('div.menu > ul > li > a') 
+		|| document.querySelectorAll('nav > .menu-show > ul > li > a');
 	for(let i=0; i < current.length; i++) {
 		if (current[i].href == window.location.href) {
 			current[i].classList.add('current');
