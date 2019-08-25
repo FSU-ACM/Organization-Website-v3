@@ -1,0 +1,81 @@
+.content {
+    display: block;
+    position: static;
+}
+
+div.about_content {
+    padding: 4.8em 13em;
+}
+
+div.about_content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+div.about_content p {
+    font-family: 'Hind', sans-serif;
+    font-size: 1.25em;
+    line-height:1.6em;
+}
+
+div#workshops h1,
+div#employerinfo h1,
+div#cookouts h1 {
+    text-align: right;
+}
+
+div#about,
+div#employerinfo,
+div#cookouts {
+    background-color: #ead5b2;
+    color: rgb(78, 75, 72);
+}
+
+div#workshops,
+div#lectures {
+    background-color: rgb(78, 75, 72);
+    color: #e4e4e4cf;
+}
+
+div#techtalks,
+div#gamenights {
+    background-color: #782f40;
+    color: #fbeac9cc;
+}
+
+div#techtalks a:link,
+div#techtalks a:visited
+{
+    color: #e4e4e4cf;
+}
+
+div#techtalks a:hover {
+    color: #fbeac9cc;
+}
+
+div#lectures a:link,
+div#lectures a:visited {
+    color: #fbeac9cc;
+}
+
+div#lectures a:hover {
+    color: #e4e4e4cf;
+}
+
+div#cookouts a:link,
+div#cookouts a:visited {
+    color: #782f40;
+}
+
+div#cookouts a:hover {
+    color: rgb(78, 75, 72);
+}
+
+@media(max-width: 1100px) {
+    
+    div.about_content {
+        padding: 4.8em 4em;
+    }
+
+}

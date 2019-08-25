@@ -1,0 +1,120 @@
+table {
+    margin: .5em 0 1em;
+}
+
+th {
+    font-size: small;
+    text-align: right;
+}
+
+td {
+    font-size: small;
+    text-align: left;
+}
+
+.past_wrapper {
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    background-color: #f3ede1;
+    margin: 2% 0 3%;
+    padding: 2% 0 0;
+    border-radius: 1.5em;
+    text-align: center;
+    align-items: center;
+}
+
+.past_wrapper h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #782f40;
+    border-bottom: 1px solid #782f40;
+
+}
+.past_wrapper h3 {
+    color: rgb(78, 75, 72);
+    margin: .2em;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5em;
+}
+
+div.past {
+    position: relative;
+    overflow: hidden;
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+ul.past {
+    list-style: none;
+    padding: 0;
+    margin-top: 5em;
+}
+
+li.past {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #782f40;
+}
+
+i.past {
+    position: absolute;
+    transform: translate(-6px,0);
+    margin-top: .7em;
+    right: 4em;
+}
+
+i.past:before, i.past:after {
+    content: "";
+    position: absolute;
+    background-color: #782f40;
+    width: .2em;
+    height: .8em;
+}
+
+i.past:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+i.past:after {
+    transform: translate(.3em, 0) rotate(-45deg);
+}
+
+ul.past input[type="checkbox"] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    box-sizing: border-box;
+    left: 0;
+}
+
+ul.past input[type="checkbox"]:checked ~ div.past {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+
+ul.past input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+ul.past input[type="checkbox"]:checked ~ i:after {
+  transform: translate(-.3em, 0) rotate(-45deg);
+}
+
+ul.past li {
+  animation: flipdown 0.5s ease both;
+}
+
+div.past, i.past:before, i.past:after {
+  transition: all 0.25s ease-in-out;
+}

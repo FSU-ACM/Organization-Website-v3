@@ -1,0 +1,22 @@
+iframe {
+    width: 60vw;
+    height: 80vh;
+}
+
+.events_wrapper {
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-color: #f3ede1;
+    margin: 2% 0 3%;
+    padding: 2% 0 3%;
+    border-radius: 1.5em;
+    text-align: center;
+    align-items: center;
+}
+
+.events_wrapper h1 {
+    color: #782f40;
+}

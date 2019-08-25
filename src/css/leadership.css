@@ -1,0 +1,110 @@
+.profile_wrapper {
+    display: flex;
+    width: 80vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f3ede1;
+    margin: 2% 0 3%;
+    padding: 2% 0 3%;
+    border-radius: 1.5em;
+    text-align: center;
+}
+
+.profile_wrapper h1 {
+    font-size: 2.5em;
+}
+.profile_wrapper h2 {
+    font-size: 1.6em;
+}
+.profile_wrapper h3 {
+    font-size: 1.3em;
+}
+.profile_wrapper h4 {
+    font-size: 1em;
+}
+
+.profile_wrapper h1,
+.profile_wrapper h2,
+.profile_wrapper h3,
+.profile_wrapper h4 {
+    color: #782f40;
+    margin: 0;
+    padding: 0;
+}
+
+.profile_wrapper p {
+    color:rgb(78, 75, 72); 
+    margin: .5em 0 0;
+    padding: 0;
+}
+
+.profile_wrapper > .header,
+.profile_wrapper > .past {
+    margin-top:3em;
+}
+ 
+.top_row, 
+.middle_row,
+.bottom_row {
+    display: flex;
+    width: inherit;
+    margin-top: 3em;
+}
+
+.top_row {
+    justify-content: center;
+}
+
+.middle_row,
+.bottom_row {
+    justify-content: space-evenly;
+}
+
+.top_row > .profile {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.headshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 11em;
+    height: 11em;
+}
+
+.prof_info {
+    text-align: center;
+
+}
+
+.prof_info > h3,
+.prof_info > p {
+    color: rgb(78, 75, 72);
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+}
+
+.prof_info > a > i {
+    font-size: 1.4em;
+    margin: .06em;
+}
+
+.prof_info > a > i#linked {
+    color: #0182c7;
+}
+
+.prof_info > a > i#linked:hover {
+    color: #036497;
+}
+
+.prof_info > a > i#mail {
+    color: #974C5D;
+}
+
+.prof_info > a > i#mail:hover {
+    color: #782f40;
+}

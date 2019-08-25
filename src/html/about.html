@@ -5,8 +5,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat:400,600|Raleway:700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/about.css"/>
         <link rel="icon" sizes="16x16 32x32 64x64" href="../img/favicon.ico"/>
     </head>
 
@@ -20,14 +21,28 @@
                     <div class="fsu">
                         <img src="../img/fsu.png" width="340" height="45">
                     </div>
-                    <div class="menu-icon">
+                    <div class="menu_icon">
                         <div class="inner" id="mobile"></div>
                     </div>
                     <div class="menu">
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="events.html">Events</a></li>
-                            <li><a href="leadership.html">Leadership</a></li>
+                            <li class="dropdown" id="hover">
+                                <p style="margin: 0;">Leadership</p>
+                                <ul class="dropdown" id="ul">
+                                    <li class="dropdown" id="li"><a href="leadership.html">Current</a></li>
+                                    <li class="dropdown" id="li"><a href="past.html">Past</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="mobile">
+                                <input type="checkbox" checked>
+                                <p style="margin: 0;">Leadership</p>
+                                <ul class="dropdown" id="ul">
+                                    <li class="dropdown" id="li"><a href="leadership.html">Current</a></li>
+                                    <li class="dropdown" id="li"><a href="past.html">Past</a></li>
+                                </ul>
+                            </li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -35,14 +50,105 @@
                 </nav>
             </header>
             <div class="content">
+                <div class="about_wrapper">
+
+                <div id="about" class="about_content">
+                <section id="about" class="about_content">
+                    <h1>Mission</h1>
+                    <p>
+                        Florida State University’s ACM Student Chapter was organized in early 1990. Our primary goal is to provide academic
+                        and social enrichment to each member, in order to enhance the individual’s experience at FSU, and assist in preparing
+                        members for life after graduation. Below are some of the activities and events our chapter hosts.
+                    </p>
+                </section>
+                </div>
+                
+                <div id="workshops" class="about_content">
+                <section id="workshops" class="about_content">
+                    <h1>Workshops</h1>
+                    <p>
+                        Our workshops cover a wide range of topics and are given by any interested individual with a background in the topic
+                        being discussed. Workshops often cover an introduction to a programming language, library, tool, or other interesting
+                        technology. Previous topics have included Python programming, Git, Machine Learning, and Unity.
+                    </p>
+                </section>
+                </div>
+                
+                <div id="techtalks" class="about_content">
+                <section id="techtalks" class="about_content">
+                    <h1>TechTalks</h1>
+                    <p>
+                        The international ACM organization regularly hosts TechTalks featuring industry professionals, ACM award laureates, and
+                        researchers from industry and academia. Past topics have included: Artificial Intelligence and Machine Learning, Big
+                        Data and Data Science, Blockchain, Computer Vision, Deep Learning, JavaScript, Microservices, Python, Quantum Computing,
+                        and more. Our chapter participates in the webinar, and invites all chapter members to attend. These talks are often cover
+                        material at a more advanced compared to our chapter workshops. More information regarding ACM TechTalks can be found at
+                        <a href="learning.acm.org">learning.acm.org</a>.
+                    </p>
+                </section>
+                </div>
+
+                <div id="employerinfo" class="about_content">
+                <section id="employerinfo" class="about_content">
+                    <h1>Employer Info Sessions</h1>
+                    <p>
+                        Our organization is frequently contacted by employers who are interested talking to our chapter about the kind of work
+                        the company does, and the types of jobs available to applicants. These info sessions allow for chapter members to meet
+                        recruiters face to face in a low pressure environment, learn how to be a competitive applicant, and ask questions about
+                        a company’s workplace and culture.
+                    </p>
+                </section>
+                </div>
+
+                <div id="lectures" class="about_content">
+                <section id="lectures" class="about_content">
+                    <h1>Faculty and Alumni Lectures</h1>
+                    <p>
+                        Our chapter is closely affiliated with the <a href="www.cs.fsu.edu">Department of Computer Science</a> at FSU. As such, 
+                        we welcome faculty members to speak to our chapter about their research, and careers more broadly. This is an excellent
+                        opportunity for members to learn about advanced topics in computer science, and life in academia, while also providing
+                        faculty a medium to meet individuals who may desire to assist in research.<br><br>
+
+                        One of the greatest uncertainties students have revolves around life after graduation. In addition to faculty, our
+                        organization asks former chapter members to talk with current students about life in the industry, how to prepare for
+                        life after graduation, and things they wished they had known or done differently while still in school.
+                    </p>
+                </section>
+                </div>
+
+                <div id="cookouts" class="about_content">
+                <section id="cookouts" class="about_content">
+                    <h1>Department Cookouts</h1>
+                    <p>
+                        Each semester, we host a cookout for our members and the department faulty. These events typically take place at the
+                        <a href="https://campusrec.fsu.edu/outdoors/reservation/">FSU Rez</a> where we offer a variety of food and games. 
+                    </p>
+                </section>
+                </div>
+
+                <div id="gamenights" class="about_content">
+                <section id="gamenights" class="about_content">
+                    <h1>Game Nights</h1>
+                    <p>
+                        Our chapter will host game nights each semester which allow our members to meet up and play a variety of tabletop, 
+                        console, and computer games. Occasionally we will host competitive LAN play as well. 
+                    </p>
+                </section>
+                </div>
+
+                </div>
             </div>
             
             <footer>
-                <div class="footerWrap">
+                <div class="footer_icons">
                     <a href="https://www.facebook.com/ACMatFSU/"><i class="fab fa-facebook-square"></i></a>
                     <a href="https://discord.gg/DeKFzS4"><i class="fab fa-discord"></i></a>
                     <a href="https://github.com/FSU-ACM"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/ACMatFSU"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/groups/12238485"><i class="fab fa-linkedin"></i></a>
                     <a href="mailto:contact@fsu.acm.org"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="footer_copy">
                     <h3>Copyright © 2019 FSU ACM Student Chapter</h3>
                 </div>
             </footer>

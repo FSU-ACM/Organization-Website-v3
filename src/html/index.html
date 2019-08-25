@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat:400,600|Raleway:700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/index.css"/>
         <link rel="icon" sizes="16x16 32x32 64x64" href="../img/favicon.ico"/>
     </head>
@@ -20,14 +20,28 @@
                     <div class="fsu">
                         <img src="../img/fsu.png" width="340" height="45">
                     </div>
-                    <div class="menu-icon">
+                    <div class="menu_icon">
                         <div class="inner" id="mobile"></div>
                     </div>
                     <div class="menu">
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="events.html">Events</a></li>
-                            <li><a href="leadership.html">Leadership</a></li>
+                            <li class="dropdown" id="hover">
+                                <p style="margin: 0;">Leadership</p>
+                                <ul class="dropdown" id="ul">
+                                    <li class="dropdown" id="li"><a href="leadership.html">Current</a></li>
+                                    <li class="dropdown" id="li"><a href="past.html">Past</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="mobile">
+                                <input type="checkbox" checked>
+                                <p style="margin: 0;">Leadership</p>
+                                <ul class="dropdown" id="ul">
+                                    <li class="dropdown" id="li"><a href="leadership.html">Current</a></li>
+                                    <li class="dropdown" id="li"><a href="past.html">Past</a></li>
+                                </ul>
+                            </li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -35,19 +49,59 @@
                 </nav>
             </header>
             <div class="hero">
-                <div class="to-content">
+                <div class="caro_wrapper">
+                    <div class="caro_slides">
+                        <div class=""></div>
+                    </div>
+
+                    <div class="caro_arrows">
+                        <a class="prev"></a>
+                        <a class="next"></a>
+                    </div>
+
+                    <div class="caro_btns">
+                        <a class=""></a>
+                        <a class=""></a>
+                        <a class=""></a>
+                    </div>
+                </div>
+
+                <div class="to_content">
                     <i class="arrow down"></i>
                 </div>
             </div>
             <div class="content">
+                <div class="info_wrapper">
+                    <span class="ossg">
+                        <h3>Open Source Software Group</h3>
+                        <p>In addition to regular meetings, the Open Source Software Group and the Programming Club meet weekly. 
+                            Join our Slack to find out when the next meetings are.</p>
+                    </span>
+
+                    <span class="progclub">
+                        <h3>Programming Club</h3>
+                        <p>In addition to regular meetings, the Open Source Software Group and the Programming Club meet weekly.
+                             Join our Slack to find out when the next meetings are.</p>
+                    </span>
+
+                    <span class="contest">
+                        <h3>Programming Contest</h3>
+                        <p>In addition to regular meetings, the Open Source Software Group and the Programming Club meet weekly. 
+                            Join our Slack to find out when the next meetings are.</p>
+                    </span>
+                </div>
             </div>
             
             <footer>
-                <div class="footerWrap">
+                <div class="footer_icons">
                     <a href="https://www.facebook.com/ACMatFSU/"><i class="fab fa-facebook-square"></i></a>
                     <a href="https://discord.gg/DeKFzS4"><i class="fab fa-discord"></i></a>
                     <a href="https://github.com/FSU-ACM"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/ACMatFSU"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/groups/12238485"><i class="fab fa-linkedin"></i></a>
                     <a href="mailto:contact@fsu.acm.org"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="footer_copy">
                     <h3>Copyright © 2019 FSU ACM Student Chapter</h3>
                 </div>
             </footer>

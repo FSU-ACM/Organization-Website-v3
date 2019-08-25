@@ -1,0 +1,57 @@
+.contact_wrapper {
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #f3ede1;
+    margin: 2% 0 3%;
+    padding: 2% 0 0;
+    border-radius: 1.5em;
+    text-align: center;
+    align-items: center;
+}
+
+textarea {
+    display: block;
+    margin-top: 1em;
+    height: 25vh;
+    width: 20vw;
+}
+
+input[type=text], textarea {
+    resize: vertical;
+    width: 30em;
+    border-radius: 1.5em;
+    padding: 1em;
+    margin: .5em;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    border-radius: 1em;
+    padding: .5em;
+    margin: .5em
+}
+
+button {
+    border-radius: 1em;
+    border: none;
+    color: #e4e4e4;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #782f40;
+}
+
+button:hover {
+    color: #782f40;
+}
+
+.contact_wrapper h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #782f40;
+}
