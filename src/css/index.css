@@ -250,6 +250,21 @@ h1 {
     padding-top: .5em;
 }
 
+.ossg a:link, 
+.ossg a:visited {
+    color: #fbeac9cc;
+}
+
+.progclub a:link, 
+.progclub a:visited {
+    color: #fbeac9cc;
+}
+
+.contest a:link, 
+.contest a:visited {
+    color: #fbeac9cc;
+}
+
 table {
     margin-top: 1em;
 }
