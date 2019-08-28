@@ -55,9 +55,9 @@ function calcHeight() {
         footerHeight = document.querySelector('footer').getBoundingClientRect().height;
 
     if (window.location.pathname.includes('index'))
-    {
-        document.querySelector('div.hero').style.height = String(window.innerHeight - navHeight) + 'px';
-        document.querySelector('div.content').style.height = String(window.innerHeight - navHeight - footerHeight) + 'px';
+    { 
+        //document.querySelector('div.hero').style.height = String(window.innerHeight - navHeight) + 'px';
+        //document.querySelector('div.content').style.height = String(window.innerHeight - navHeight - footerHeight) + 'px';
     } 
     else if (!window.location.pathname.includes('leadership'))
     {    

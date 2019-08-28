@@ -1,6 +1,7 @@
 .content {
     display: block;
     position: static;
+    padding: 0;
 }
 
 div.about_content {

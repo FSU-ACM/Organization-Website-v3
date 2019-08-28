@@ -1,0 +1,50 @@
+.sponsor_wrapper {
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #f3ede1;
+    margin: 2% 0 3%;
+    padding: 2% 0 0;
+    border-radius: 1.5em;
+    text-align: center;
+    justify-content: center;
+}
+
+.sponsor_wrapper img {
+    width: 25%;
+    align-self: center;
+    margin: 0 6%;
+}
+
+.top,
+.bottom {
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+.top {
+    margin-top: 3em;
+}
+
+h1, h2 {
+    color: #782f40;
+    margin: 0;
+}
+
+@media(max-width: 1100px) {
+    .bottom {
+        flex-direction: column;
+    }
+
+    .sponsor_wrapper {
+        justify-content: normal;
+    }
+
+    .sponsor_wrapper img {
+        width: 60%;
+    }
+
+
+}
