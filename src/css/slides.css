@@ -3,7 +3,7 @@ iframe {
     height: 80vh;
 }
 
-.events_wrapper {
+.slides_wrapper {
     display: flex;
     width: 80vw;
     flex-direction: column;
@@ -17,6 +17,6 @@ iframe {
     align-items: center;
 }
 
-.events_wrapper h1 {
+.slides_wrapper h1 {
     color: #782f40;
 }

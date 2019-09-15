@@ -26,7 +26,21 @@
                     <div class="menu">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="./html/events.html">Events</a></li>
+                            <li class="dropdown" id="hover">
+                                <p style="margin: 0;">Events</p>
+                                <ul class="dropdown" id="ul">
+                                    <li class="dropdown" id="li"><a href="./html/calendar.html">Calendar</a></li>
+                                    <li class="dropdown" id="li"><a href="./html/slides.html">Slides</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="mobile">
+                                <input type="checkbox" checked>
+                                <p style="margin: 0;">Events</p>
+                                <ul class="dropdown" id="ul">
+                                    <li class="dropdown" id="li"><a href="./html/calendar.html">Calendar</a></li>
+                                    <li class="dropdown" id="li"><a href="./html/slides.html">Slides</a></li>
+                                </ul>
+                            </li>
                             <li class="dropdown" id="hover">
                                 <p style="margin: 0;">Leadership</p>
                                 <ul class="dropdown" id="ul">
@@ -104,7 +118,7 @@
                             Our OSSG assists those interested in open source development to collaborate on projects of personal interest. This 
                             group is open to developers of all experience levels, and receives guidance from
                             <a href="https://www.cs.fsu.edu/~shaiduc/">Dr. Sonia Haiduc</a>. 
-                            Check out our events page for meeting dates and times.
+                            Check out our events calendar for meeting dates and times.
                         </p>
                     </span>
 

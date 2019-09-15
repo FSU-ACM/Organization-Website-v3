@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat:400,600|Raleway:700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/index.css"/>
-        <link rel="stylesheet" type="text/css" href="../css/events.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/calendar.css"/>
         <link rel="icon" sizes="16x16 32x32 64x64" href="../img/favicon.ico"/>
     </head>
 
@@ -27,7 +27,21 @@
                     <div class="menu">
                         <ul>
                             <li><a href="../index.html">Home</a></li>
-                            <li><a href="events.html">Events</a></li>
+                            <li class="dropdown" id="hover">
+                                <p style="margin: 0;">Events</p>
+                                <ul class="dropdown" id="ul">
+                                    <li class="dropdown" id="li"><a href="calendar.html">Calendar</a></li>
+                                    <li class="dropdown" id="li"><a href="slides.html">Slides</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="mobile">
+                                <input type="checkbox" checked>
+                                <p style="margin: 0;">Events</p>
+                                <ul class="dropdown" id="ul">
+                                    <li class="dropdown" id="li"><a href="calendar.html">Calendar</a></li>
+                                    <li class="dropdown" id="li"><a href="slides.html">Slides</a></li>
+                                </ul>
+                            </li>
                             <li class="dropdown" id="hover">
                                 <p style="margin: 0;">Leadership</p>
                                 <ul class="dropdown" id="ul">
@@ -50,7 +64,7 @@
                 </nav>
             </header>
             <div class="content">
-                <div class="events_wrapper">
+                <div class="calendar_wrapper">
                     <h1>Event Calendar</h1>
                     <iframe src="https://calendar.google.com/calendar/b/2/embed?height=600&amp;wkst=1&amp;bgcolor=%23f3ede1&amp;ctz=America%2FNew_York&amp;src=c3A2dHNwcWZzc2NjdDFpY2d2M292aGRiOGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showCalendars=0&amp;showTitle=0" style="border-width:0" frameborder="0" scrolling="no"></iframe>
                 </div>
