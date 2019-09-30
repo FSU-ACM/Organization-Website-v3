@@ -145,21 +145,27 @@ function heroClickEvent() {
 }
 
 function addCurrent() {
-    if (window.location.href.includes('leadership') || window.location.href.includes('past')) {
-        let current = document.querySelector('.dropdown#hover p');
-                    
-        current.style.borderBottom = '1px solid #e4e4e4';
+    var links_h = document.querySelectorAll('.dropdown#hover ul'),
+        links_m = document.querySelectorAll('.dropdown#mobile ul'),
+        current = window.location.href;
+
+    for (let i = 0; i < links_h.length; i++) {
+        for (let j = 0; j < links_h[i].childElementCount; j++) {
+            if (links_h[i].children[j].firstChild.href == current) {            
+                links_h[i].previousElementSibling.style.borderBottom = '1px solid #e4e4e4';
+                links_m[i].previousElementSibling.style.borderBottom =  '1px solid #e4e4e4';
+                break;
+            }
+        }
     }
-    else {
+
+    var current = document.querySelectorAll('.menu > ul > li > a') ||
+                document.querySelectorAll('.menu_show > ul > li > a');
         
-        let current = document.querySelectorAll('.menu > ul > li > a') ||
-            document.querySelectorAll('.menu_show > ul > li > a');
-        
-        for (let i = 0; i < current.length; i++) {
-            if (current[i].href == window.location.href) {
-                current[i].classList.add('current');
+    for (let i = 0; i < current.length; i++) {
+        if (current[i].href == window.location.href) {
+            current[i].classList.add('current');
         }
     }   
-    }
 }
 

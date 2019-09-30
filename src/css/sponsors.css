@@ -25,7 +25,11 @@
 }
 
 .top {
-    margin-top: 3em;
+    margin: 3em 0 3em;
+}
+
+.bottom {
+    margin-bottom: 3em;
 }
 
 h1, h2 {
@@ -44,7 +48,11 @@ h1, h2 {
 
     .sponsor_wrapper img {
         width: 60%;
+        margin: 10% 6%;
     }
-
+    
+    .top {
+        margin: 0;
+    }
 
 }
