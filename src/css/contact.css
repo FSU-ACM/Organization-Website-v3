@@ -1,6 +1,10 @@
-iframe {
-    width: 60vw;
-    height: 80vh;
+table {
+    margin: .5em 0 1em;
+}
+
+th,
+td {
+    font-size: medium !important;
 }
 
 .contact_wrapper {
@@ -8,15 +12,18 @@ iframe {
     width: 80vw;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: normal;
     background-color: #f3ede1;
     margin: 2% 0 3%;
-    padding: 2% 0 3%;
+    padding: 2% 0 0;
     border-radius: 1.5em;
     text-align: center;
     align-items: center;
 }
 
 .contact_wrapper h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
     color: #782f40;
 }
