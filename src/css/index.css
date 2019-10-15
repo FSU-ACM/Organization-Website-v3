@@ -372,21 +372,25 @@ h1 {
 .progclub p a:hover,
 .contest p a:hover {
     color: #e4e4e4;
+    text-decoration-line: underline;
 }
 
 .ossg a:link, 
 .ossg a:visited {
-    color: #fbeac9cc;
+    color: #CEB888;
+    text-decoration-line: underline;
 }
 
 .progclub a:link, 
 .progclub a:visited {
-    color: #fbeac9cc;
+    color: #CEB888;
+    text-decoration-line: underline;
 }
 
 .contest a:link, 
 .contest a:visited {
-    color: #fbeac9cc;
+    color: #CEB888;
+    text-decoration-line: underline;
 }
 
 table {
